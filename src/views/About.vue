@@ -1,7 +1,7 @@
 <template>
-  <div class="about container text-center">
+  <div class="about text-center">
     <Placeholder />
-    <div class="border border-light rounded">
+    <div class="container overflow-auto mb-5 pb-5">
       <p class="lead">
         Brainscans.net is an inclusive competitive organization. We believe
         everyone should have a chance in competing in esports regardless of

@@ -38,10 +38,10 @@ export default {
   mounted() {
     axios
       .get(
-        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=583950&count=3&maxlength=200&format=json",
-        { headers: { "Access-Control-Allow-Origin": "*", 'Content-Type': 'application/json' } }
+        "http://brainscans.net/json/artifact.json"
       )
       .then((response) => (this.info = response.data.appnews.newsitems));
+
   },
   methods: {
     getImage(str) {

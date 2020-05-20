@@ -9,15 +9,24 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue';
-import Socials from '@/components/Socials.vue';
+import Navbar from "@/components/Navbar.vue";
+import Socials from "@/components/Socials.vue";
 
 export default {
   components: {
     Navbar,
-    Socials
-  }
-}
+    Socials,
+  },
+  mounted() {
+    this.createTitle();
+  },
+  methods: {
+    createTitle() {
+      document.title =
+        "Brainscans.net | Competitive & Inclusive Artifact Tournaments";
+    },
+  },
+};
 </script>
 <style>
 html body {

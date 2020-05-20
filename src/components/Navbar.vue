@@ -18,6 +18,7 @@
 </template>
 
 <script>
+
 export default {};
 </script>
 
@@ -27,6 +28,6 @@ export default {};
 }
 a {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5em;
 }
 </style>
