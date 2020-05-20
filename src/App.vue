@@ -1,32 +1,27 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <Navbar />
     </div>
     <router-view />
+    <Socials />
   </div>
 </template>
 
+<script>
+import Navbar from '@/components/Navbar.vue';
+import Socials from '@/components/Socials.vue';
+
+export default {
+  components: {
+    Navbar,
+    Socials
+  }
+}
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+html body {
+  background-color: #1d1025;
+  color: white;
 }
 </style>
