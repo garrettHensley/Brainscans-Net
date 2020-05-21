@@ -3,7 +3,9 @@
     <div id="nav">
       <Navbar />
     </div>
-    <router-view />
+    <div id="main-view" class="mb-5 pb-5">
+      <router-view />
+    </div>
     <Socials />
   </div>
 </template>
